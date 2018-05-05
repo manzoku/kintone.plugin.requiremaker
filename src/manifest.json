@@ -1,0 +1,37 @@
+{
+    "manifest_version": 1,
+    "version": 1,
+    "type": "APP",
+    "name": {
+        "ja": "必須マークアップ",
+        "en": "markup requires"
+    },
+    "description": {
+        "ja": "必須マークを見やすくカスタマイズ！",
+        "en": "remake of require mark."
+    },
+    "icon": "image/icon.png",
+    "homepage_url": {
+        "ja": "https://manzoku.github.io/",
+        "en": "https://manzoku.github.io/"
+    },
+    "desktop": {
+        "js": [
+            "https://js.cybozu.com/jquery/3.2.1/jquery.min.js",
+            "js/requiremark.js"
+        ]
+    },
+    "config": {
+        "html": "html/config.html",
+        "js": [
+            "https://js.cybozu.com/jquery/3.2.1/jquery.min.js",
+            "js/spectrum.min.js",
+            "js/config.js"
+        ],
+        "css": [
+            "css/config.css",
+            "css/config-custom.css",
+            "css/spectrum.min.css"
+        ]
+    }
+}

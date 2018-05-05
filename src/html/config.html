@@ -1,0 +1,64 @@
+<h1>必須マークアップ</h1>
+<p>必須マークを見やすくカスタマイズ！</p>
+<br>
+<form name="setting">
+    <div class="kintoneplugin-row">
+        <div class="kintoneplugin-label">テキスト:</div>
+        <div class="kintoneplugin-input-outer">
+            <div class="kintoneplugin-input">
+                <input id="kintone-plugin-requiremaker-text" type="text" value="*">
+            </div>
+        </div>
+    </div>
+    <div class="kintoneplugin-row">
+        <div class="kintoneplugin-label">文字サイズ:</div>
+        <div class="kintoneplugin-input-outer">
+            <div class="kintoneplugin-input">
+                <input id="kintone-plugin-requiremaker-size" type="number" value="15"><label for="kintone-plugin-requiremaker-size">px</label>
+            </div>
+        </div>
+    </div>
+    <div class="kintoneplugin-row">
+        <div class="kintoneplugin-label">文字色:</div>
+        <div class="kintoneplugin-input-outer">
+            <div class="kintoneplugin-input">
+                <input id="kintone-plugin-requiremaker-color" type="text" value="#e74c3c">
+            </div>
+        </div>
+    </div>
+    <div class="kintoneplugin-row">
+        <div class="kintoneplugin-label">文字太さ:</div>
+        <div class="kintoneplugin-select-outer">
+            <div class="kintoneplugin-select">
+                <select id="kintone-plugin-requiremaker-weight">
+                    <option value="bold">太字</option>
+                    <option value="normal" selected>標準</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="kintoneplugin-row">
+        <div class="kintoneplugin-label">文字スタイル:</div>
+        <div class="kintoneplugin-select-outer">
+            <div class="kintoneplugin-select">
+                <select id="kintone-plugin-requiremaker-style">
+                    <option value="normal" selected>標準</option>
+                    <option value="italic">イタリック体</option>
+                    <option value="oblique">斜体</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="kintoneplugin-row">
+        <div class="kintoneplugin-label">必須マーク非表示対象(設置されている管理項目のみ):</div>
+        <div id="kintone-plugin-requiremaker-disables">
+            <div class="kintoneplugin-input-checkbox"><span class="kintoneplugin-input-checkbox-item"><input type="checkbox" value="record_id" class="field-name" id="rowrecord_id"><label for="rowrecord_id"></label></div>
+            <div class="kintoneplugin-input-checkbox"><span class="kintoneplugin-input-checkbox-item"><input type="checkbox" value="modifier" class="field-name" id="rowmodifier"><label for="rowmodifier"></label></div>
+            <div class="kintoneplugin-input-checkbox"><span class="kintoneplugin-input-checkbox-item"><input type="checkbox" value="creator" class="field-name" id="rowcreator"><label for="rowcreator"></label></div>
+            <div class="kintoneplugin-input-checkbox"><span class="kintoneplugin-input-checkbox-item"><input type="checkbox" value="modified_at" class="field-name" id="rowmodified_at"><label for="rowmodified_at"></label></div>
+            <div class="kintoneplugin-input-checkbox"><span class="kintoneplugin-input-checkbox-item"><input type="checkbox" value="created_at" class="field-name" id="rowcreated_at"><label for="rowcreated_at"></label></div>
+        </div>
+    </div>
+    <button class="kintoneplugin-button-dialog-ok" type="button" id="setting-submit">保存する</button>
+    <button class="kintoneplugin-button-dialog-cancel" type="button" id="setting-cancel">キャンセル</button>
+</form>
